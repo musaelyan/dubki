@@ -82,6 +82,9 @@ body {
 // подключение анимации
 @import "animate.min.scss";
 
+// фоторама (слайдер)
+@import "fotorama.scss";
+
 // подключение всех стилей
 @import "blocks/adress.scss";
 @import "blocks/advantages.scss";
