@@ -1,0 +1,101 @@
+@import "normalize.scss";
+
+// шрифт
+@font-face {
+  font-family: "BebasNeueBold";
+  src: url("../fonts/BebasNeueBold.eot");
+  src: local("BebasNeueBold"),
+       url("../fonts/BebasNeueBold.svg") format("svg"),
+       url("../fonts/BebasNeueBold.ttf") format("truetype"),
+       url("../fonts/BebasNeueBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeueBook";
+  src: url("../fonts/BebasNeueBook.eot");
+  src: local("BebasNeueBook"),
+       url("../fonts/BebasNeueBook.svg") format("svg"),
+       url("../fonts/BebasNeueBook.ttf") format("truetype"),
+       url("../fonts/BebasNeueBook.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// подключение переменных
+@import "variables.scss";
+
+
+body {
+  background: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #595959;
+  text-transform: none;
+  min-width: 320px;
+  @media ($tablet-width) {
+    min-width: 768px;
+  }
+  @media ($desktop-width) {
+    min-width: 1040px;
+  }
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  @media ($tablet-width) {
+    width: 728px;
+    padding: 20px;
+  }
+  @media ($desktop-width) {
+    width: 1000px;
+  }
+}
+
+.menu .container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  @media ($tablet-width) {
+    width: 728px;
+    padding: 15px 20px;
+  }
+  @media ($desktop-width) {
+    width: 1000px;
+  }
+}
+
+
+// подключение миксинов
+@import "mixins.scss";
+
+// подключение попапов
+@import "popup.scss";
+
+// подключение анимации
+@import "animate.min.scss";
+
+// подключение всех стилей
+@import "blocks/adress.scss";
+@import "blocks/advantages.scss";
+@import "blocks/btn.scss";
+@import "blocks/company.scss";
+@import "blocks/footer.scss";
+@import "blocks/form.scss";
+@import "blocks/header-content.scss";
+@import "blocks/languages.scss";
+@import "blocks/intro.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-adress.scss";
+@import "blocks/menu.scss";
+@import "blocks/phone.scss";
+@import "blocks/promo.scss";
+@import "blocks/slider.scss";
+@import "blocks/wood.scss";

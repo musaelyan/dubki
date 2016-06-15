@@ -1,0 +1,47 @@
+.slider-phone {
+  width: 100%;
+  height: auto;
+  @media ($tablet-width) {
+    display: none;
+  }
+}
+
+.promo {
+  text-align: center;
+  overflow: hidden;
+}
+
+.promo__title {
+  font-family: "BebasNeueBold", Arial, sans-serif;
+  color: black;
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 40px;
+  @media ($tablet-width) {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  @media ($desktop-width) {
+    font-size: 55px;
+    line-height: 64px;
+  }
+}
+
+.promo-picture img {
+  width: 300px;
+  height: 193px;
+  margin-top: 20px;
+  @media ($tablet-width) {
+    width: 650px;
+    height: auto;
+    margin-top: 0px;
+  }
+  @media ($desktop-width) {
+    width: 771px;
+    height: 496px;
+  }
+}

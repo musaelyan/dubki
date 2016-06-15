@@ -1,0 +1,97 @@
+.intro {
+  background: #f7f7f7;
+}
+
+.intro-title {
+  @include clearfix;
+  padding-top: 20px;
+  @media ($tablet-width) {
+    padding-top: 40px;
+  }
+  @media ($desktop-width) {
+    padding-top: 70px;
+  }
+}
+
+.intro-pictures {
+  position: relative;
+
+  &__product {
+    width: 300px;
+    height: 172px;
+    padding-bottom: 20px;
+    @media ($tablet-width) {
+      width: 390px;
+      height: auto;
+    }
+    @media ($desktop-width) {
+      width: 574px;
+      height: 330px;
+    }
+  }
+
+
+  @media ($tablet-width) {
+    float: left;
+
+  }
+  @media ($desktop-width) {
+
+  }
+}
+
+.intro-pictures__guarantee {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  width: 120px;
+  height: 120px;
+  @media ($tablet-width) {
+    width: 140px;
+    height: auto;
+    left: 20px;
+    top: 60px;
+  }
+  @media ($desktop-width) {
+    width: 168px;
+  }
+}
+
+.intro-description {
+  width: 300px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "BebasNeueBold", Arial, sans-serif;
+  color: black;
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: normal;
+  text-transform: uppercase;
+  @media ($tablet-width) {
+    float: right;
+    width: 330px;
+    font-size: 46px;
+    line-height: 50px;
+  }
+  @media ($desktop-width) {
+    width: 395px;
+    font-size: 55px;
+    line-height: 64px;
+  }
+}
+
+
+.intro-application {
+  text-align: center;
+  padding: 25px 0;
+  @media ($tablet-width) {
+    padding: 30px 0;
+  }
+  @media ($desktop-width) {
+    padding: 50px 0;
+  }
+}
+
+.green-text {
+  color: $green;
+}

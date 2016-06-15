@@ -1,0 +1,37 @@
+.phone {
+  float: left;
+  margin-top: 5px;
+  &--footer {
+    margin-top: 10px;
+  }
+  @media ($tablet-width) {
+    margin-top: 17px;
+    float: right;
+  }
+  @media ($desktop-width) {
+
+  }
+}
+
+.phone-number {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.phone__link {
+  color: black;
+  text-decoration: none;
+  font-family: "BebasNeueBold", Arial, sans-serif;
+  font-size: 25px;
+  @media ($tablet-width) {
+    font-size: 35px;
+  }
+}
+
+.phone--footer {
+
+  @media ($tablet-width) {
+    margin-top: 50px;
+  }
+}

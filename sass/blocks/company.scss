@@ -1,0 +1,7 @@
+.company {
+  @include clearfix;
+  margin-bottom: 70px;
+  @media ($tablet-width) {
+    margin-bottom: 0px;
+  }
+}

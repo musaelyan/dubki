@@ -1,0 +1,11 @@
+.header-content {
+  @include clearfix;
+  padding: 0px 0 65px;
+  position: relative;
+  @media ($tablet-width) {
+    padding: 50px 0 15px;
+  }
+  @media ($desktop-width) {
+    padding: 65px 0 15px;
+  }
+}

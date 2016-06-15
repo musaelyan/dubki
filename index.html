@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Дубки | Белоостровский деревообрабатывающий комбинат</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.min.css">
+		<script src="js/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+		<script type="text/javascript">
+			jQuery(function($){
+			$("#phone1").mask("+7(999) 999-9999");
+			$("#phone2").mask("+7(999) 999-9999");
+			$("#phone3").mask("+7(999) 999-9999");
+			$("#phone4").mask("+7(999) 999-9999");
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$(".hamburger").click(function(){
+				$(".hamburger").toggleClass("hamburger--is-active"); return false,
+				$(".menu-wrapper").toggleClass("menu-wrapper--is-opened"); return false;
+			});
+		});
+		</script>
+
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<script src="js/wow.min.js"></script>
+		<script>new WOW().init();</script>
+	</head>
+	<body>
+
+
+		<header class="header" id="section-1">
+
+			<nav class="menu menu--tablet" id="navigation-menu">
+				<div class="container">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#section-1" rel="m_PageScroll2id" data-ps2id-offset="53" class="menu__link">Главная</a></li>
+						<li class="menu__item"><a href="#section-2" rel="m_PageScroll2id" data-ps2id-offset="53" class="menu__link">Продукция</a></li>
+						<li class="menu__item"><a href="#section-3" rel="m_PageScroll2id" data-ps2id-offset="53" class="menu__link">Производство</a></li>
+						<li class="menu__item"><a href="#section-4" rel="m_PageScroll2id" data-ps2id-offset="53" class="menu__link">Качество</a></li>
+						<li class="menu__item"><a href="#section-5" rel="m_PageScroll2id" data-ps2id-offset="53" class="menu__link">Как нас найти</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="logo logo--mobile">
+				<div class="container">
+					<img src="img/logo.png" alt="DUBKI Белоостровский деревообрабатывающий комбинат" width="376" height="93" class="logo__picture">
+					<div style="bottom: 54px; right: 14px; position: absolute;">
+						<button class="hamburger" type="button">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu-wrapper">
+				<nav class="menu" id="navigation-menu2">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#section-1" rel="m_PageScroll2id" data-ps2id-offset="0" class="menu__link">Главная</a></li>
+						<li class="menu__item"><a href="#section-2" rel="m_PageScroll2id" data-ps2id-offset="0" class="menu__link">Продукция</a></li>
+						<li class="menu__item"><a href="#section-6" rel="m_PageScroll2id" data-ps2id-offset="0" class="menu__link">Производство</a></li>
+						<li class="menu__item"><a href="#section-4" rel="m_PageScroll2id" data-ps2id-offset="0" class="menu__link">Качество</a></li>
+						<li class="menu__item"><a href="#section-5" rel="m_PageScroll2id" data-ps2id-offset="0" class="menu__link">Как нас найти</a></li>
+					</ul>
+				</nav>
+			</div>
+
+
+			<div class="container">
+				<div class="header-content">
+
+					<div class="logo logo--tablet">
+						<img src="img/logo.png" alt="DUBKI Белоостровский деревообрабатывающий комбинат" width="376" height="93" class="logo__picture">
+					</div>
+
+					<div class="phone">
+						<div class="phone-number"><a href="tel:+78126402757" class="phone__link">8-812-640-27-57</a></div>
+						<div class="phone-number"><a href="tel:+78005051053" class="phone__link">8-800-505-105-3</a></div>
+						<a href="#RequestCall" class="btn btn--phone">Заказать звонок для консультации</a>
+					</div>
+
+					<a href="#RequestCall" class="btn btn--phone-mob">Заказать звонок для консультации</a>
+
+					<div class="adress">Санкт-Петербург<br>Белоостров<br>Новое шоссе д.45, Лит. Е<br><a href="mailto:hello@dubki.pro?subject=Сообщение%20с%20сайта%20Dubki%20" class="adress__link">hello@dubki.pro</a>
+					</div>
+
+					<ul class="languages__list">
+						<li class="languages__item languages__item--active"><a><img class="languages__picture" src="img/rus.png" alt="Russian" width="35" height="24"></a></li>
+						<li class="languages__item"><a href="index-eng.html"><img class="languages__picture" src="img/eng.png" alt="English" width="35" height="24"></a></li>
+						<li class="languages__item"><a href="index-fi.html"><img class="languages__picture" src="img/fin.png" alt="Finnish" width="35" height="24"></a></li>
+					</ul>
+
+				</div>
+			</div>
+		</header>
+
+		<a href="#close" class="overlay" id="RequestCall"></a>
+        <div class="popup">
+					<a href="#close" class="popup-close">крестик</a>
+					<form method="post" action="send.php">
+							<div class="form">
+								<div class="form-line">
+									<p class="form-caption">Введите Ваш телефон и специалист компании <span class="form-caption--green">DUBKI</span> свяжется с Вами, чтобы ответить на все вопросы</p>
+									<input class="form__field" type="text" placeholder="Введите телефон" id="phone1" name="phone" required>
+								</div>
+								<div class="form-line">
+									<button class="btn btn-submit btn-submit--popup" type="submit">Заказать звонок</button>
+								</div>
+							</div>
+					</form>
+        </div>
+
+				<a href="#close" class="overlay" id="WoodPrice"></a>
+		        <div class="popup popup--WoodPrice">
+							<a href="#close" class="popup-close">крестик</a>
+								<form method="post" action="sendWood.php">
+										<div class="form-block">
+											<p class="form-caption">Введите параметры:</p>
+											<div class="form-line form-line--wood">
+												<div class="wood-label"><label for="ch1">Толщина (мм):</label></div>
+												<input class="form__field" type="text" placeholder="40" name="depth" id="ch1" required>
+											</div>
+											<div class="form-line form-line--wood">
+												<div class="wood-label"><label for="ch2">Ширина (мм):</label></div>
+												<input class="form__field" type="text" placeholder="500" name="width" id="ch2" required>
+											</div>
+											<div class="form-line form-line--wood">
+												<div class="wood-label"><label for="ch3">Длина (мм):</label></div>
+												<input class="form__field" type="text" placeholder="2000" name="length" id="ch3" required>
+											</div>
+                      <div class="form-line form-line--wood">
+												<div class="wood-label"><label for="ch4">Кол-во:</label></div>
+												<input class="form__field" type="text" placeholder="25" name="quantity" id="ch4" required>
+											</div>
+
+											<div class="form__quantity">
+												<label for="ch5">м<sup>3</sup></label>
+				                <input type="radio" name="type" value="m3" id="ch5" checked>
+
+												<label for="ch6">м<sup>2</sup></label>
+				                <input type="radio" name="type" value="m2" id="ch6">
+
+												<label for="ch7">шт.</label>
+				                <input type="radio" name="type" value="panel" id="ch7">
+				              </div>
+
+										</div>
+										<div class="form-block">
+											<div class="form-line">
+												<input class="form__field" type="text" placeholder="Введите Ваш телефон" id="phone2" name="phone" required>
+											</div>
+											<div class="form-line form-line--wood">
+												<button class="btn btn-submit btn-submit--popup" type="submit">Узнать цену</button>
+											</div>
+										</div>
+								</form>
+							</div>
+
+				<a href="#close" class="overlay" id="thanks"></a>
+		        <div class="popup">
+							<a href="#close" class="popup-close">крестик</a>
+								<p class="form-caption">Спасибо за оставленную заявку!<br>Мы перезвоним Вам в самое ближайшее время.</p>
+						</div>
+
+		<section class="intro">
+			<div class="container">
+				<div class="intro-title">
+					<div class="intro-pictures">
+						<img src="img/schit_na_glavnuyu.png" alt="wood" width="574" height="330" class="intro-pictures__product">
+						<img src="img/garant.png" alt="best price" width="168" height="168" class="intro-pictures__guarantee">
+					</div>
+					<h1 class="intro-description">Производство <span class="green-text">мебельных щитов</span><br>в Санкт-Петербурге <span class="green-text">с доставкой</span> по всей России и <span class="green-text">за рубеж</span></h1>
+				</div>
+				<div class="intro-application">
+					<div class="form form--intro">
+						<form method="post" action="send.php">
+							<input class="form__field" type="text" placeholder="Введите Ваш телефон" name="phone" id="phone3" required>
+							<button class="form__field btn btn-submit" type="submit">Оставьте заявку на бесплатную партию образцов продукции<br> или расчёт стоимости</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="wood" id="section-2">
+			<div class="container">
+				<div class="wood-sorts">
+
+					<div class="wood-sort animated wow fadeInLeft" data-wow-duration="2s">
+						<h2 class="wood-sort__title">Дуб</h2>
+						<div class="wood-sort__pictures">
+							<img src="img/brusok_dub.png" alt="oak" width="412" height="227" class="wood-sort__plate">
+						</div>
+						<div class="circle circle--dub"></div>
+						<a href="#WoodPrice" class="btn btn--wood-sort">Узнать цену</a>
+					</div>
+
+					<div class="wood-sort animated wow fadeInRight" data-wow-duration="2s">
+						<h2 class="wood-sort__title">Бук</h2>
+						<div class="wood-sort__pictures">
+							<img src="img/brusok_buk.png" alt="oak" width="412" height="227" class="wood-sort__plate">
+						</div>
+						<div class="circle circle--buk"></div>
+						<a href="#WoodPrice" class="btn btn--wood-sort">Узнать цену</a>
+					</div>
+
+					<div class="wood-sort animated wow fadeInLeft" data-wow-duration="2s">
+						<h2 class="wood-sort__title">Ясень</h2>
+						<div class="wood-sort__pictures">
+							<img src="img/brusok_yasen.png" alt="oak" width="412" height="227" class="wood-sort__plate">
+						</div>
+						<div class="circle circle--yasen"></div>
+						<a href="#WoodPrice" class="btn btn--wood-sort">Узнать цену</a>
+					</div>
+
+					<div class="wood-sort animated wow fadeInRight" data-wow-duration="2s">
+						<h2 class="wood-sort__title">Лиственница</h2>
+						<div class="wood-sort__pictures">
+							<img src="img/brusok_listvennitsa.png" alt="oak" width="412" height="227" class="wood-sort__plate">
+						</div>
+						<div class="circle circle--listvennitsa"></div>
+						<a href="#WoodPrice" class="btn btn--wood-sort">Узнать цену</a>
+					</div>
+				</div>
+
+        <div class="wood-other">
+					<a href="#RequestCall" class="btn btn--wood-other animated wow fadeInUp" data-wow-duration="2s">Выбрать другие породы древесины / нетиповые размеры</a>
+				</div>
+
+			</div>
+		</section>
+
+
+		<div class="slider-phone" id="section-6">
+			<img src="img/sliderBG-phone.jpg" alt="" width="100%" class="slider-phone_image">
+		</div>
+
+
+		<section class="slider" id="section-3">
+			<div class="b-presentation" id="nav-experience">
+				<div class="slider-photo" id="slider-photo">
+					<div style="max-width: 100%;" class="bx-wrapper">
+						<div style="width: 100%; overflow: hidden; position: relative; height: 617px;" class="bx-viewport">
+							<ul style="width: auto; position: relative;">
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/1b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/2b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/3b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/4b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/5b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: list-item;"><img src="img/7b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/9b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/10b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/11b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/12b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/13b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/14b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/15b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/16b.jpg" alt="" height="613" width="2000"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1519px; z-index: 0; display: none;"><img src="img/17b.jpg" alt="" height="613" width="2000"></li>
+							</ul>
+						</div>
+						<div class="bx-controls"></div>
+					</div>
+				</div>
+
+				<div class="wrap">
+					<div style="max-width: 100%; margin: 0px auto;" class="bx-wrapper">
+						<div style="width: 100%; overflow: hidden; position: relative; height: 613px;" class="bx-viewport">
+							<ul style="width: auto; position: relative;" class="slider-presentation" id="slider-presentation">
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1000px; z-index: 0; display: none;"><img src="img/text1.png" alt="15 лет опыта"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1000px; z-index: 0; display: list-item;"><img src="img/text2.png" alt="15 лет опыта"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1000px; z-index: 0; display: none;"><img src="img/text3.png" alt="15 лет опыта"></li>
+								<li style="float: none; list-style: outside none none; position: absolute; width: 1000px; z-index: 0; display: none;"><img src="img/text4.png" alt="15 лет опыта"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="slider-photo-pager" id="slider-photo-pager">
+					<div style="display: block;" class="scrollingHotSpotLeft"></div>
+					<div class="scrollingHotSpotRight"></div>
+					<div class="scrollWrapper">
+						<div style="width: 4256px;" class="scrollableArea">
+							<a href="" data-slide-index="12"><img src="img/15s.jpg" alt="" height="137" width="219"></a>
+							<a href="" data-slide-index="13"><img src="img/16s.jpg" alt="" height="137" width="219"></a>
+							<a href="" data-slide-index="14"><img src="img/17s.jpg" alt="" height="137" width="219"></a>
+							<a href="" data-slide-index="0"><img src="img/1s.jpg" alt="" height="189" width="304"></a>
+							<a href="" data-slide-index="1"><img src="img/2s.jpg" alt="" height="189" width="304"></a>
+							<a href="" data-slide-index="2"><img src="img/3s.jpg" alt="" height="189" width="304"></a>
+							<a href="" data-slide-index="3"><img src="img/4s.jpg" alt="" height="189" width="304"></a>
+							<a href="" data-slide-index="4"><img src="img/5s.jpg" alt="" height="137" width="219"></a>
+							<a class="active" href="" data-slide-index="5"><img src="img/7s.jpg" alt="" height="137" width="219"></a>
+							<a href="" data-slide-index="6"><img src="img/9s.jpg" alt="" height="189" width="304"></a>
+							<a href="" data-slide-index="7"><img src="img/10s.jpg" alt="" height="189" width="304"></a>
+							<a href="" data-slide-index="8"><img src="img/11s.jpg" alt="" height="189" width="304"></a>
+							<a href="" data-slide-index="9"><img src="img/12s.jpg" alt="" height="137" width="219"></a>
+							<a href="" data-slide-index="10"><img src="img/13s.jpg" alt="" height="137" width="219"></a>
+							<a href="" data-slide-index="11"><img src="img/14s.jpg" alt="" height="137" width="219"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="promo">
+			<div class="container">
+				<div class="promo-picture animated wow fadeInDown" data-wow-duration="3s">
+					<img src="img/promo-box.jpg" alt="promo-box" width="771" height="496" class="promo-image">
+				</div>
+				<h2 class="promo__title animated wow fadeInUp" data-wow-duration="2s">Оставьте заявку на расчёт стоимости<br>и мы отправим тестовые образцы<br>продукции уже через 3 дня!</h2>
+				<div class="form form--promo animated wow fadeInUp" data-wow-duration="2s">
+					<form method="post" action="send.php">
+						<input class="form__field form__field--promo" type="text" placeholder="Введите Ваш телефон" name="phone" id="phone4" required>
+						<button class="form__field btn btn-submit" type="submit">Оставьте заявку на бесплатную партию образцов продукции<br> или расчёт стоимости</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages" id="section-4">
+			<div class="container">
+				<div class="advantages-title">
+					<img src="img/logo_white.png" alt="DUBKI" width="227" height="101" class="advantages-title__picture animated wow fadeInLeft" data-wow-duration="2s">
+					<div class="advantages-title__description animated wow fadeInRight" data-wow-duration="2s">Мы гарантируем Вам и Вашим клиентам качество каждого щита</div>
+				</div>
+				<div class="advantages__list">
+					<p class="advantages__item advantages__item--first animated wow fadeIn" data-wow-duration="3s">Для производства щитов мы используем древесину, выдержанную в сушильной камере, до влажности 6-8%, что гарантирует лучшее качество</p>
+					<p class="advantages__item advantages__item--second animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s">Каждую ламель, перед склейкой, мы подбираем вручную, по цвету и фактуре дерева</p>
+					<p class="advantages__item advantages__item--third animated wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s">Работаем по ГОСТу</p>
+					<h2 class="advantages__item--main animated wow fadeIn" data-wow-duration="5s">Компаний, которые продают мебельные щиты в России много, производят - единицы!</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-adress" id="section-5">
+			<div class="container">
+				<h2 class="main-adress__title animated wow fadeInUp" data-wow-duration="2s">Как нас найти?</h2>
+				<p class="main-adress__description animated wow fadeInUp" data-wow-duration="2s">Россия, Санкт-Петербург<br>п. Белоостров, Новое шоссе д.45, Лит. Е<br>60.136368, 30.017515</p>
+			</div>
+			<div class="map-canvas">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6681.933467218226!2d30.015018787944324!3d60.13850401014209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDA4JzEwLjkiTiAzMMKwMDEnMDMuMCJF!5e0!3m2!1sru!2sru!4v1463247686744" allowfullscreen></iframe>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="company">
+					<div class="logo">
+						<img src="img/logo.png" alt="DUBKI Белоостровский деревообрабатывающий комбинат" width="376" height="93" class="logo__picture">
+						<p class="company-description">
+							ООО “ПК ДУБКИ”<br>
+							ИНН: 7843006746<br>
+							КПП: 784301001<br>
+							ОГРН: 1167847198287<br>
+							197730, Санкт-Петербург<br>
+							п. Белоостров, Новое шоссе<br>
+							д.53, лит. А, оф. 304<br>
+							<a href="mailto:hello@dubki.pro?subject=Сообщение%20с%20сайта%20Dubki%20" class="adress__link adress__link--footer">hello@dubki.pro</a>
+						</p>
+					</div>
+					<div class="phone phone--footer">
+						<div class="phone-number"><a href="tel:+78126402757" class="phone__link">8-812-640-27-57</a></div>
+						<div class="phone-number"><a href="tel:+78005051053" class="phone__link">8-800-505-105-3</a></div>
+						<a href="#RequestCall" class="btn btn--phone">Заказать звонок для консультации</a>
+					</div>
+
+					<a href="#RequestCall" class="btn btn--phone-mob btn--phone-mob-footer">Заказать звонок для консультации</a>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/jquery_006.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.js"></script>
+		<script type="text/javascript" src="js/jquery_002.js"></script>
+		<script type="text/javascript" src="js/jquery_005.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<!-- Page Scroll to id plugin -->
+		<script type="text/javascript" src="js/jquery.malihu.PageScroll2id.js"></script>
+
+		<script>
+			(function($){
+				$(window).load(function(){
+
+					/* Page Scroll to id fn call */
+					$("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+						highlightSelector:"#navigation-menu a",
+						keepHighlightUntilNext:true
+					});
+					$("#navigation-menu2 a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+						highlightSelector:"#navigation-menu2 a",
+						keepHighlightUntilNext:true
+					});
+				});
+			})(jQuery);
+		</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,116 @@
+.wood {
+  background-color: #0d0d0d;
+  background-image: url("../img/woodBG.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wood-sorts {
+  text-align: center;
+  font-size: 0px;
+}
+
+.wood-sort {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 30px 0px;
+  transition: 0.5s ease;;
+  @media ($tablet-width) {
+    margin: 40px 0px;
+    &:nth-child(odd) {
+      margin-right: 90px;
+    }
+  }
+  @media ($desktop-width) {
+    &:nth-child(odd) {
+      margin-right: 140px;
+    }
+  }
+}
+
+.wood-sort__title {
+  @include titles;
+  text-align: left;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  @media ($tablet-width) {
+    text-align: left;
+  }
+}
+
+.wood-other {
+  font-size: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  @media ($tablet-width) {
+    padding: 30px 0px;
+  }
+  @media ($desktop-width) {
+    margin: 30px;
+    }
+}
+
+.wood-sort__pictures {
+  margin-bottom: 20px;
+}
+
+.wood-sort__pictures img {
+  width: 300px;
+  height: 165px;
+  @media ($desktop-width) {
+    width: 412px;
+    height: 227px;
+  }
+}
+
+.circle {
+  display: none;
+  @media ($desktop-width) {
+    display: block;
+    position:absolute;
+    top: 83px;
+    left: 0px;
+    border-radius: 50%;
+    width: 168px;
+    height: 168px;
+    overflow: hidden;
+    border: 1px solid #f3f3f3;
+  }
+}
+
+.circle:hover {
+  animation: circle-move 3s infinite ease-out;
+}
+
+.wood-sort__pictures:hover + .circle {
+  animation: circle-move 3s infinite ease-out;
+}
+
+.circle--dub {
+  background: url("../img/dub.jpg") -23px -13px;
+}
+
+.circle--buk {
+  background: url("../img/buk.jpg") -23px -13px;
+}
+
+.circle--yasen {
+  background: url("../img/yasen.jpg") -23px -13px;
+}
+
+.circle--listvennitsa {
+  background: url("../img/listvennitsa.jpg") -23px -13px;
+}
+
+
+@keyframes circle-move{
+  0%{background-position:-23px -13px;}
+  25%{background-position:-13px -13px;}
+  50%{background-position:-23px -33px;}
+  75%{background-position:-33px -33px;}
+}

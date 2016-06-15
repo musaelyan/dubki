@@ -1,0 +1,122 @@
+.btn {
+  display: inline-block;
+  padding: 10px 20px 20px;
+  font-size: 15px;
+  text-decoration: none;
+  background: linear-gradient(#16cc16,#197519) $green;
+  border-radius: 8px;
+  position: relative;
+  color: white;
+  box-shadow: 0px -10px 0px -2px #096309 inset;
+  @media ($tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.btn:hover {
+  background: linear-gradient(#0f9a0f,#0d890d) $green;
+}
+
+.btn:active {
+  background: $green-dark;
+  box-shadow: 0px 0px 0px 0px #096309 inset;
+}
+
+.btn-submit {
+  outline: none;
+  border: none;
+  position: relative;
+  padding: 4px 20px 13px;
+  @media ($tablet-width) {
+    font-size: 16px;
+  }
+  @media ($desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.btn-submit--popup {
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px 0px 20px;
+  width: 100%
+}
+
+.btn--phone {
+  display: none;
+  @media ($tablet-width) {
+    display: block;
+    font-size: 11px;
+    padding: 10px 10px 20px 30px;
+    border-radius: 5px;
+    position: relative;
+  }
+}
+
+.btn--phone-fi {
+  display: none;
+  @media ($tablet-width) {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+.btn--phone-mob {
+  display: block;
+  font-size: 14px;
+  padding: 10px 10px 20px 20px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5px;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 90%;
+  text-align: center;
+  &:before {
+    width: 13px;
+    height: 13px;
+    background: url("../img/tel.png") no-repeat;
+    content: "";
+    display: block;
+    left: 15px;
+    top: 10px;
+    position: absolute;
+  }
+  @media ($tablet-width) {
+    display: none;
+  }
+}
+
+.btn--phone-mob-footer {
+  width: 88%;
+  bottom: 20px;
+  @media ($tablet-width) {
+    display: none;
+  }
+}
+
+
+.btn--phone:before {
+  width: 13px;
+  height: 13px;
+  background: url("../img/tel.png") no-repeat;
+  content: "";
+  display: block;
+  left: 10px;
+  top: 10px;
+  position: absolute;
+}
+
+.btn--wood-sort {
+  background: rgba(215, 40, 40, 0.0);
+  border: 2px solid white;
+  border-radius: 4px;
+  position: relative;
+  color: white;
+  box-shadow: none;
+  padding: 10px 30px;
+}
+
+.btn--wood-sort:hover {
+  border: 2px solid $green-dark;
+}

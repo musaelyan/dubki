@@ -1,0 +1,45 @@
+.adress {
+  font-size: 18px;
+  font-family: "BebasNeueBook", Arial, sans-serif;
+  font-weight: normal;
+  color: black;
+  position: relative;
+  margin: 5px 0;
+  float: right;
+  @media ($tablet-width) {
+    float: left;
+    padding-left: 25px;
+    font-size: 21px;
+    font-family: "BebasNeueBook", Arial, sans-serif;
+    font-weight: normal;
+    color: black;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  @media ($desktop-width) {
+    margin-left: 80px;
+  }
+}
+
+.adress:before {
+  display: none;
+  @media ($tablet-width) {
+    width:16px;
+    height: 22px;
+    background: url("../img/geo.png") no-repeat;
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  @media ($desktop-width) {
+
+  }
+
+}
+
+.adress__link {
+  color: $green;
+}

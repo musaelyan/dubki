@@ -1,0 +1,77 @@
+.map-canvas {
+  height: 200px;
+  width: 100%;
+  background: #f0ede6 url("../img/map.jpg") no-repeat;
+  background-size: cover;
+  background-position: center 0px;
+  @media ($tablet-width) {
+    height: 300px;
+  }
+  @media ($desktop-width) {
+    height: 440px;
+  }
+}
+
+.map-canvas iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+  background-size: cover;
+  background-position: center 0px;
+  @media ($tablet-width) {
+    height: 300px;
+  }
+  @media ($desktop-width) {
+    height: 440px;
+  }
+}
+
+.main-adress__title {
+  @include titles;
+  text-align: center;
+  padding: 20px 0 0;
+  @media ($tablet-width) {
+
+  }
+  @media ($desktop-width) {
+    padding-top: 50px;
+  }
+}
+
+.main-adress__description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 21px;
+  font-family: "BebasNeueBook", Arial, sans-serif;
+  font-weight: normal;
+  color: black;
+  position: relative;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  @media ($tablet-width) {
+  }
+  @media ($desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+}
+
+.main-adress__description:before {
+  width:16px;
+  height: 22px;
+  background: url("../img/geo.png") no-repeat;
+  content: "";
+  display: block;
+  left: 23px;
+  top: 15px;
+  position: absolute;
+  @media ($tablet-width) {
+    left: 20px;
+    top: 15px;
+  }
+  @media ($desktop-width) {
+    left: 20px;
+    top: 35px;
+  }
+}
